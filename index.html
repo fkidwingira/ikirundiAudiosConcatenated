@@ -2,22 +2,211 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=Lesson%201%20-%20Hello%20Kirundi/Pages/1-1.html">
-  <title>iKirundi – Lesson 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iKirundi</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f5f0eb;
+      background: #ffffff;
+      padding: 2rem 1.5rem;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #2d2014;
+      margin-bottom: 0.3rem;
+    }
+    .subtitle {
+      font-size: 0.85rem;
+      color: #9b7e5a;
+      margin-bottom: 2rem;
+    }
+    .lesson-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .lesson-item a,
+    .lesson-item.locked span {
       display: flex;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
+      gap: 0.9rem;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: background 0.15s;
     }
-    a { color: #9b7e5a; font-size: 1.1rem; }
+    .lesson-item a {
+      background: #f5f0eb;
+      color: #2d2014;
+    }
+    .lesson-item a:hover { background: #e8dfd5; }
+    .lesson-item.locked span {
+      background: #f9f9f9;
+      color: #bbb;
+      cursor: default;
+    }
+    .num {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #9b7e5a;
+      min-width: 2rem;
+      text-align: right;
+    }
+    .lesson-item.locked .num { color: #ccc; }
   </style>
 </head>
 <body>
-  <p>Redirecting… <a href="Lesson%201%20-%20Hello%20Kirundi/Pages/1-1.html">Click here if not redirected</a></p>
+  <h1>iKirundi</h1>
+  <p class="subtitle">Select a lesson to begin</p>
+
+  <div class="lesson-list">
+
+    <div class="lesson-item">
+      <a href="Lesson%201%20-%20Hello%20Kirundi/Pages/1-1.html">
+        <span class="num">1</span> Hello Kirundi
+      </a>
+    </div>
+
+    <div class="lesson-item">
+      <a href="Lesson%202%20-%20My%20Name%20Is%E2%80%A6/Pages/2-1.html">
+        <span class="num">2</span> My Name Is…
+      </a>
+    </div>
+
+    <div class="lesson-item">
+      <a href="Lesson%203%20-%20Family%20Words/Pages/3-1.html">
+        <span class="num">3</span> Family Words
+      </a>
+    </div>
+
+    <div class="lesson-item">
+      <a href="Lesson%204%20-%20Yes%20-%20No%20-%20Please/Pages/4-1.html">
+        <span class="num">4</span> Yes · No · Please
+      </a>
+    </div>
+
+    <div class="lesson-item">
+      <a href="Lesson%205%20-%20Asking%20questions/Pages/5-1.html">
+        <span class="num">5</span> Asking Questions
+      </a>
+    </div>
+
+    <div class="lesson-item">
+      <a href="Lesson%206%20-%20Numbers%201%E2%80%9310/Pages/6-1.html">
+        <span class="num">6</span> Numbers 1–10
+      </a>
+    </div>
+
+    <div class="lesson-item">
+      <a href="Lesson%207%20-%20Food%20Basics/Pages/7-1.html">
+        <span class="num">7</span> Food Basics
+      </a>
+    </div>
+
+    <div class="lesson-item">
+      <a href="Lesson%208%20-%20Water%20-%20Hunger%20-%20Needs/Pages/8-1.html">
+        <span class="num">8</span> Water · Hunger · Needs
+      </a>
+    </div>
+
+    <div class="lesson-item">
+      <a href="Lesson%209%20-%20Home%20Objects/Pages/9-1.html">
+        <span class="num">9</span> Home Objects
+      </a>
+    </div>
+
+    <div class="lesson-item">
+      <a href="Lesson%2010%20-%20Where%20Is..._/Pages/10-1.html">
+        <span class="num">10</span> Where Is…?
+      </a>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">11</span> Colors Around Me</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">12</span> Clothes</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">13</span> Morning Routine</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">14</span> Eat · Drink · Sleep</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">15</span> People Around Me</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">16</span> Time Basics</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">17</span> Come · Go · Sit</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">18</span> Feelings</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">19</span> Weather</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">20</span> At the Market</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">21</span> Body</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">22</span> Transportation</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">23</span> School &amp; Learning</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">24</span> Health Basics</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">25</span> Animals</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">26</span> Verbs in Action</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">27</span> Common Home Commands</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">28</span> Short Conversations</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">29</span> Daily Life Review</span>
+    </div>
+
+    <div class="lesson-item locked">
+      <span><span class="num">30</span> I Can Speak Kirundi</span>
+    </div>
+
+  </div>
 </body>
 </html>
